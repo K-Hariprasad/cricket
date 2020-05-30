@@ -13,18 +13,22 @@
     </header>
     <div class="score text-center">
         <span>You&nbsp;&nbsp;  </span>
-        <span>0 - 0</span>
+        <span id="score"></span>
         <span> &nbsp;&nbsp;Com</span>
     </div><br/>
     <div class="text-center">
-        <button class="btn bt" value="1">1</button>
-        <button class="btn bt" value="2">2</button>
-        <button class="btn bt" value="3">3</button>
-        <button class="btn bt" value="4">4</button>
-        <button class="btn bt" value="6">6</button>
+        <button class="btn bt" onclick="game(value)" value=1>1</button>
+        <button class="btn bt" onclick="game(value)" value=2>2</button>
+        <button class="btn bt" onclick="game(value)" value=3>3</button>
+        <button class="btn bt" onclick="game(value)" value=4>4</button>
+        <button class="btn bt" onclick="game(value)" value=5>5</button>
+        <button class="btn bt" onclick="game(value)" value=6>6</button>
+    </div>
+    <div class="text-center" id="res">
     </div>
 </body>
 <!-- --------------------script-------------------------- -->
+<script src="index.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
