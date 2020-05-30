@@ -11,7 +11,7 @@ function game(userinput){
         document.getElementById("res").innerHTML="OUT"
     }
     else{
-
+        document.getElementById("res").innerHTML=""
         userPoints+=parseInt(userinput);
         comPoints +=parseInt(com);
         document.getElementById("score").innerHTML=userPoints +" - "+ comPoints

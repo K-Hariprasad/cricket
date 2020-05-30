@@ -19,3 +19,16 @@
     background-color:white;
     border: rgb(16, 153, 135) solid;
 }
+#res{
+    margin: 2%;
+    color: rgb(13, 82, 82);
+    font-size: 30px;
+}
+.score{
+    color: crimson;
+    font-size: 20px;
+}
+#score{
+    font-size: 25px;
+    color: rgb(3, 59, 59);
+}
