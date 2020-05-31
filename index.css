@@ -2,7 +2,7 @@
     background-color: rgb(253, 255, 255);
 }
 #game{
-    color: crimson;
+    color: rgb(13, 66, 59);
     margin: 20px;
 }
 .bt{
@@ -19,8 +19,27 @@
     background-color:white;
     border: rgb(16, 153, 135) solid;
 }
+.bw{
+    background-color: crimson;
+    color: honeydew;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 1%;
+    font-size: 30px;
+}
+.bw:hover{
+    color:  crimson;
+    background-color:white;
+    border:  crimson solid;
+}
 #res{
     margin: 2%;
+    color: rgb(13, 82, 82);
+    font-size: 30px;
+}
+#res2{
+    margin: 3%;
     color: rgb(13, 82, 82);
     font-size: 30px;
 }
@@ -39,4 +58,8 @@
 }
 #start{
     margin-top: 5%;
+}
+#next{
+    font-size: 20px;
+    font-weight: bold;
 }

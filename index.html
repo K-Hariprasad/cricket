@@ -25,11 +25,14 @@
     </div>
     <!-- ---------------------------------Batting--------------------------------- -->
     <div id="bat" hidden>
-        <div class="text-center">
-            <span class="score">You&nbsp;&nbsp;  </span>
-            <span id="score"></span>
-            <span class="score"> &nbsp;&nbsp;Com</span>
-        </div><br/>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4" id="com-card"></div>
+                <div class="col-md-4" id="player-card"></div>
+                <div class="col-md-4" id="balls"></div>
+            </div>
+        </div>
+        <br/>
         <div class="text-center">
             <button class="btn bt" onclick="bat(value)" value=1>1</button>
             <button class="btn bt" onclick="bat(value)" value=2>2</button>
@@ -38,12 +41,43 @@
             <button class="btn bt" onclick="bat(value)" value=5>5</button>
             <button class="btn bt" onclick="bat(value)" value=6>6</button>
         </div>
-        <div class="text-center" id="res">
-        </div>
+        <div class="text-center" id="res"></div>
+        <div id="next" class="text-center text-danger"></div><br/>
+        <div class="text-center">
+        <button class="btn btn-success" hidden id="cont" onclick="nextInnings()">Continue</button>
+        </div>        
     </div>
     <!-- ---------------------------Bowling----------------------------------- -->
     <div>
-
+        <div id="bowl" hidden>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4" id="player-card2"></div>
+                    <div class="col-md-4" id="com-card2"></div>
+                    <div class="col-md-4" id="balls2"></div>
+                </div>
+            </div>
+            <br/>
+            <div id="com-bat"></div>
+            <div class="text-center">
+                <button class="btn bw" onclick="bowl(value)" value=1>1</button>
+                <button class="btn bw" onclick="bowl(value)" value=2>2</button>
+                <button class="btn bw" onclick="bowl(value)" value=3>3</button>
+                <button class="btn bw" onclick="bowl(value)" value=4>4</button>
+                <button class="btn bw" onclick="bowl(value)" value=5>5</button>
+                <button class="btn bw" onclick="bowl(value)" value=6>6</button>
+            </div>
+            <div class="text-center" id="res2"></div>
+        </div>
+    </div>
+    <!-- ---------------------------Result------------------------------------ -->
+    <div id="winnerComp" class="text-center" hidden>
+        <p class="display-4 text-danger">COMPUTER WIN THE GAME..........!!</p><br/>
+        <button class="btn btn-primary" onclick="location.reload()">Play Again</button>
+    </div>
+    <div id="winnerUser" class="text-center" hidden>
+        <p  class="display-4 text-success">YOU WIN THE GAME..........!!</p><br/>
+        <button class="btn btn-primary" onclick="location.reload()">Play Again</button>
     </div>
 </body>
 <!-- --------------------script-------------------------- -->
