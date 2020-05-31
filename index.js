@@ -74,7 +74,7 @@ function bowl(userinput) {
   var com = Math.floor(Math.random() * 6) + 1;
   count += 1
   if (count < 12 && wickets < 3) {
-    document.getElementById("com-bat").innerHTML = com
+    // document.getElementById("com-bat").innerHTML = com
     document.getElementById("balls2").innerHTML = "BALLS LEFT : " + (12 - count);
     if (userinput == com) {
       wickets += 1
