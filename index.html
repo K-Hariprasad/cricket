@@ -8,23 +8,42 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <!-- ----------------------Header--------------------------- -->
     <header id="game">
-        <h1 class="text-center">Welcome to Cricket</h1>
+        <h1 class="text-center display-3">CRICKET</h1>
     </header>
-    <div class="text-center">
-        <span class="score">You&nbsp;&nbsp;  </span>
-        <span id="score"></span>
-        <span class="score"> &nbsp;&nbsp;Com</span>
-    </div><br/>
-    <div class="text-center">
-        <button class="btn bt" onclick="game(value)" value=1>1</button>
-        <button class="btn bt" onclick="game(value)" value=2>2</button>
-        <button class="btn bt" onclick="game(value)" value=3>3</button>
-        <button class="btn bt" onclick="game(value)" value=4>4</button>
-        <button class="btn bt" onclick="game(value)" value=5>5</button>
-        <button class="btn bt" onclick="game(value)" value=6>6</button>
+    <!-- ---------------------------Landing page---------------------------------------- -->
+    <div id="start">
+        <div class="col-md-4 offset-md-4 text-center">
+            <p class="start-msg display-4">Hi, Please enter your name ......</p>
+        <form>
+            <input type="text" class="form-control" id="player" value="" onkeyup="validate(value)" required><br/>
+            <button onclick="start()" class="btn btn-danger" id="btn-st" disabled>Start</button>
+        </form><br/>
+        <div id="err" class="text-danger"></div>
+        </div>
     </div>
-    <div class="text-center" id="res">
+    <!-- ---------------------------------Batting--------------------------------- -->
+    <div id="bat" hidden>
+        <div class="text-center">
+            <span class="score">You&nbsp;&nbsp;  </span>
+            <span id="score"></span>
+            <span class="score"> &nbsp;&nbsp;Com</span>
+        </div><br/>
+        <div class="text-center">
+            <button class="btn bt" onclick="bat(value)" value=1>1</button>
+            <button class="btn bt" onclick="bat(value)" value=2>2</button>
+            <button class="btn bt" onclick="bat(value)" value=3>3</button>
+            <button class="btn bt" onclick="bat(value)" value=4>4</button>
+            <button class="btn bt" onclick="bat(value)" value=5>5</button>
+            <button class="btn bt" onclick="bat(value)" value=6>6</button>
+        </div>
+        <div class="text-center" id="res">
+        </div>
+    </div>
+    <!-- ---------------------------Bowling----------------------------------- -->
+    <div>
+
     </div>
 </body>
 <!-- --------------------script-------------------------- -->
