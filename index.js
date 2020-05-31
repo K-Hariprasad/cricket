@@ -8,7 +8,7 @@ var player = "";
 var wickets = 0;
 // -------------------------batting-------------------------------
 function bat(userinput) {
-  var com = Math.floor(Math.random() * 1) + 1;
+  var com = Math.floor(Math.random() * 6) + 1;
   count += 1
   if (count < 12 && wickets < 3) {
     document.getElementById("balls").innerHTML = "BALLS LEFT : " + (12 - count);
