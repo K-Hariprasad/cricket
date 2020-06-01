@@ -74,7 +74,6 @@ function bowl(userinput) {
   var com = Math.floor(Math.random() * 6) + 1;
   count += 1
   if (count < 12 && wickets < 3) {
-    // document.getElementById("com-bat").innerHTML = com
     document.getElementById("balls2").innerHTML = "BALLS LEFT : " + (12 - count);
     if (userinput == com) {
       wickets += 1
@@ -87,7 +86,6 @@ function bowl(userinput) {
       }
     }
     else {
-      document.getElementById("com-bat").innerHTML = com
       comPoints += com;
       document.getElementById("res2").innerHTML = " "
       userPoints += parseInt(userinput);
@@ -99,7 +97,6 @@ function bowl(userinput) {
     }
   }
   else if (count == 12) {
-    document.getElementById("com-bat").innerHTML = com
     comPoints += com;
     document.getElementById("balls").innerHTML = "BALLS LEFT : " + (12 - count);
     document.getElementById("res2").innerHTML = " "
